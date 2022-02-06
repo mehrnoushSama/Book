@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/My Project/Task/app/src/main/res/font/ir_sans_family.xml" value="0.396875" />
         <entry key="..\:/My Project/Task/app/src/main/res/layout/activity_main.xml" value="0.13489583333333333" />
-        <entry key="..\:/My Project/Task/app/src/main/res/layout/fragment_splash.xml" value="0.13489583333333333" />
+        <entry key="..\:/My Project/Task/app/src/main/res/layout/fragment_splash.xml" value="0.25" />
       </map>
     </option>
   </component>
