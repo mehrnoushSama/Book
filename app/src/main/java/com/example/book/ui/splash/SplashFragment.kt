@@ -1,4 +1,4 @@
-package com.example.book.splash
+package com.example.book.ui.splash
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
