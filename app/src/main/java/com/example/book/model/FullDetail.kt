@@ -1,9 +1,12 @@
 package com.example.book.model
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
- class FullDetail(
+@Parcelize
+data class FullDetail(
     @SerializedName("bookLibraryGradeFieldId")
     val bookLibraryGradeFieldId: Int,
     @SerializedName("bookLibraryId")
@@ -15,7 +18,7 @@ import com.google.gson.annotations.SerializedName
     @SerializedName("eBookPrice")
     val eBookPrice: Int,
     @SerializedName("edition")
-    val edition: Any,
+    val edition: String,
     @SerializedName("filePreviewUrl")
     val filePreviewUrl: String,
     @SerializedName("fullDescription")
@@ -34,4 +37,4 @@ import com.google.gson.annotations.SerializedName
     val volumeOfFile: String,
     @SerializedName("year")
     val year: Int
-)
+) : Parcelable
