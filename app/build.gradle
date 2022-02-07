@@ -39,8 +39,15 @@ android {
     }
 }
 
+ext {
+    pdfViewerVersion = '3.2.0-beta.1'
+    glideVersion = '4.12.0'
+    hiltVersion = '2.39.1'
+    retrofitVersion = '2.4.0'
+    navVersion = "2.4.0"
+}
+
 dependencies {
-    def nav_version = "2.4.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -52,19 +59,26 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
 
     //Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
 
     //Hilt
-    implementation 'com.google.dagger:hilt-android:2.39.1'
-    kapt 'com.google.dagger:hilt-compiler:2.39.1'
-    
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-compiler:$hiltVersion"
+
     //ViewModel
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //pdfViewer
+    // implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
 
 }
 
