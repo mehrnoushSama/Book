@@ -4,6 +4,7 @@ package com.example.book.model
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
+import java.util.*
 
 @Parcelize
 data class FullDetail(
@@ -18,7 +19,7 @@ data class FullDetail(
     @SerializedName("eBookPrice")
     val eBookPrice: Int,
     @SerializedName("edition")
-    val edition: String,
+    val edition: Int,
     @SerializedName("filePreviewUrl")
     val filePreviewUrl: String,
     @SerializedName("fullDescription")

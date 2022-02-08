@@ -1,6 +1,6 @@
 package com.example.book.api
 
-import com.example.book.model.BookDetail
+import com.example.book.model.BookInfoResult
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -17,5 +17,5 @@ interface BookApi {
     )
 
     @GET("GetBookInfo/{bookLibraryId}")
-    fun getDetails(@Path("bookLibraryId") bookLibraryId: Int): Call<BookDetail>
+    fun getDetails(@Path("bookLibraryId") bookLibraryId: Int): Call<BookInfoResult>
 }

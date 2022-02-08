@@ -1,7 +1,7 @@
 package com.example.book.repository
 
 import com.example.book.api.BookApi
-import com.example.book.model.BookDetail
+import com.example.book.model.BookInfoResult
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -12,13 +12,16 @@ import javax.inject.Singleton
 @Singleton
 class BookRepository @Inject constructor(var bookApi: BookApi) {
 
-    fun getBookDetail(completion: (BookDetail?) -> Unit) {
-        bookApi.getDetails(84).enqueue(object : Callback<BookDetail> {
-            override fun onResponse(call: Call<BookDetail>, response: Response<BookDetail>) {
+    fun getBookDetail(completion: (BookInfoResult?) -> Unit) {
+        bookApi.getDetails(84).enqueue(object : Callback<BookInfoResult> {
+            override fun onResponse(
+                call: Call<BookInfoResult>,
+                response: Response<BookInfoResult>
+            ) {
                 completion(response.body())
             }
 
-            override fun onFailure(call: Call<BookDetail>, t: Throwable) {
+            override fun onFailure(call: Call<BookInfoResult>, t: Throwable) {
                 completion(null)
             }
 

@@ -2,4 +2,12 @@
     <string name="app_name">Book</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book_title">عنوان کتاب :</string>
+    <string name="book_classified">سری کتاب :</string>
+    <string name="book_author">مولف کتاب :</string>
+    <string name="book_pages">تعداد صفحات :</string>
+    <string name="sample_question_exam">نمونه سوال امتحانی</string>
+    <string name="answer">پاسخنامه</string>
+    <string name="error">خطا</string>
+    <string name="error_receiving_information">خطا در دریافت اطلاعات</string>
 </resources>

@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class BookDetail(
+data class Result(
     @SerializedName("authors")
     val authors: List<Author>,
     @SerializedName("fullDetail")
