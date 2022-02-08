@@ -8,12 +8,12 @@ MVVM architecture is a Model-View-ViewModel architecture that removes the tight 
 
 
 # Features 
--Kotlin
--MVVM
--Retrofit
--Hilt
--ViewBinding 
--LiveData
+- Kotlin
+- MVVM
+- Retrofit
+- Hilt
+- ViewBinding 
+- LiveData
 
 
 
