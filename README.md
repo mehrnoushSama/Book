@@ -14,6 +14,7 @@ MVVM architecture is a Model-View-ViewModel architecture that removes the tight 
 - Hilt
 - ViewBinding 
 - LiveData
+- Navigation
 
 
 
